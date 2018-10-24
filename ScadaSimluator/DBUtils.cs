@@ -13,9 +13,9 @@ namespace ScadaSimluator
         {
             string host = "localhost";
             int port = 3306;
-            string database = "test";
+            string database = "scada_test";
             string username = "root";
-            string password = "";
+            string password = "mavric";
             return DBMySQLUtils.GetDBConnection(host, port, database, username, password);
         }
         

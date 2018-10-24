@@ -12,7 +12,7 @@ namespace ScadaSimluator
         public static MySqlConnection GetDBConnection(string host, int port, string database, string username, string password)
         {
             String connString = "Server=" + host + ";Database=" + database
-               + ";port=" + port + ";User Id=" + username + ";password=" + password + ";AllowUserVariables=True";
+               + ";port=" + port + ";User Id=" + username + ";password=" + password + ";AllowUserVariables=True;SslMode = none";
             MySqlConnection conn = new MySqlConnection(connString);
             return conn;
         }
